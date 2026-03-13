@@ -1,0 +1,39 @@
+# Test URLs for different environments
+urls:
+  dev:
+    base_url: "https://dev.example.com"
+    login_url: "/login"
+    dashboard_url: "/dashboard"
+    profile_url: "/profile"
+    settings_url: "/settings"
+  
+  staging:
+    base_url: "https://staging.example.com"
+    login_url: "/login"
+    dashboard_url: "/dashboard"
+    profile_url: "/profile"
+    settings_url: "/settings"
+  
+  prod:
+    base_url: "https://example.com"
+    login_url: "/login"
+    dashboard_url: "/dashboard"
+    profile_url: "/profile"
+    settings_url: "/settings"
+
+# Common test data
+test_users:
+  valid_user:
+    username: "test_user"
+    password: "test_pass"
+    email: "test@example.com"
+  
+  invalid_user:
+    username: "invalid_user"
+    password: "invalid_pass"
+    email: "invalid@example.com"
+  
+  admin_user:
+    username: "admin"
+    password: "admin_pass"
+    email: "admin@example.com" 

@@ -1,0 +1,40 @@
+# config/config.yaml
+
+browser:
+  default: "chrome"
+  headless: false
+  implicit_wait: 10
+  page_load_timeout: 30
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(filename)s:[%(lineno)d] - [%(levelname)s] - %(message)s"
+  directory: "reports/logs"
+
+# Environment-specific settings for your application
+environments:
+  # The sample automation practice site
+  demo:
+    base_url: "https://www.saucedemo.com/"
+    username: "standard_user"
+    password: "secret_sauce"
+
+  # Your actual development environment
+  dev:
+    base_url: "https://dev.example.com"
+    username: "dev_user"
+    password: "dev_pass"
+  
+#  # Your actual staging environment
+#  staging:
+#    base_url: "https://staging.example.com"
+#    username: "staging_user"
+#    password: "staging_pass"
+#
+#  # Your actual production environment
+#  prod:
+#    base_url: "https://example.com"
+#    username: "prod_user"
+#    password: "prod_pass"
+#
+#    wego:
